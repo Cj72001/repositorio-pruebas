@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas de salas</title>
+</head>
+
+<body>
+    <header>
+
+        <img src="./img/logo.png" width="100" height="100" class="loginLogo" alt="loginLogo" />
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"> <i class="material-icons">view_headline</i> </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Create new Room</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="button-back-content">
+        <div class="button-back">
+
+            <figure>
+                <img src="https://image.freepik.com/free-icon/arrow-left-thick_318-8506.jpg" width="30" height="30"
+                    alt="button back">
+            </figure>
+
+        </div>
+    </div>
+
+    <main class="table-users">
+
+        <div class="choose-room">
+            <select id="room-name" name="room">
+                <option value="">--choose a room--</option>
+                <option value="1">Room #1</option>
+                <option value="2">Room #2</option>
+            </select>
+        </div>
+
+        <table class="statistics-user" border="1" cellspacing="0" cellpadding="10">
+
+            <thead>
+                <tr>
+
+                    <th>Table</th>
+                    <th>Used parts</th>
+                    <th>Time</th>
+                    <th>Height</th>
+                    <th>Scores</th>
+                    <th>Status</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+
+                    <td>1</td>
+                    <td>12</td>
+                    <td>14:16 minutes</td>
+                    <td>16 meters</td>
+                    <td>1000 points</td>
+                    <td>5000 points</td>
+
+                </tr>
+                <tr>
+
+                    <td>2</td>
+                    <td>14</td>
+                    <td>10:44 minutes</td>
+                    <td>11 meters</td>
+                    <td>1600 points</td>
+                    <td>5500 points</td>
+
+                </tr>
+                <tr>
+
+                    <td>3</td>
+                    <td>17</td>
+                    <td>19:54 minutes</td>
+                    <td>19 meters</td>
+                    <td>2000 points</td>
+                    <td>4000 points</td>
+
+                </tr>
+        </table>
+    </main>
+    <footer class="entitites-logos">
+        <figure class="logos">
+            <img src="https://th.bing.com/th/id/OIP.HZtI3dXD5E72_4koauGTiAHaKH?pid=Api&rs=1" width="50" height="60"
+                alt="uca logo">
+            <img src="https://pmief.org/-/media/images/main-images/pmief_main_image.png" width="55" height="45"
+                alt="PMIef logo">
+        </figure>
+    </footer>
+
+
+</body>
+
+</html>

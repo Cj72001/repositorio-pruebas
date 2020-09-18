@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin dashboard</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="/img/menu-icon.jpeg" width="20" alt="Hamb-menu">Menu
+        <div>
+            <h2><img src="img/user-icon.png" alt="user-logo" height="40"> Username</h2>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Create new Room</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="button-back-content">
+        <div class="button-back">
+
+            <figure>
+                <img src="https://image.freepik.com/free-icon/arrow-left-thick_318-8506.jpg" width="30" height="30"
+                    alt="button back">
+            </figure>
+
+        </div>
+    </div>
+
+    <main class="statistics-admin">
+        <div>
+            <table cellpadding="15" style="background-color:blue">
+                <thead>
+                    <tr>
+                        <th>Total players</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="middle">560</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table cellpadding="15" style="background-color:orange">
+                <thead>
+                    <tr>
+                        <th colspan="2">Device used</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="middle">PC</td>
+                        <td>56%</td>
+                    </tr>
+                    <tr>
+                        <td align="middle">Laptop</td>
+                        <td>44%</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <table cellpadding="15" style="background-color:purple">
+                <thead>
+                    <tr>
+                        <th>Number of tables created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="middle">60</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <table cellpadding="15" style="background-color:red">
+                <thead>
+                    <tr>
+                        <th>Daily reports</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="middle">10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <canvas id="AdminGraphs" width="200" height="100" style="border:1px solid #000000;"></canvas>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        </div>
+
+        <div class="choose-room">
+            <select id="room-name" name="room">
+                <option value="">--choose a room--</option>
+                <option value="1">Room #1</option>
+                <option value="2">Room #2</option>
+            </select>
+        </div>
+
+        <div>
+            <table style="background-color: gray;" cellpadding="15">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Gamers</th>
+                        <th>Rooms</th>
+                        <th>GameTables</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="middle">July 5th, 2020</td>
+                        <td align="middle">80</td>
+                        <td align="middle">21</td>
+                        <td align="middle">80</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <img src="img/uca-logo.png" alt="Logo UCA" width="50">
+        <img src="img/pmief-logo.png" alt="Logo PMIEF" width="50">
+    </footer>
+</body>
+
+</html>
