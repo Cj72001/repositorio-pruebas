@@ -4,9 +4,10 @@
 @import "base/reset";
 @import "base/page";
 //Layout
-@import "layout/main-login";
-@import "layout/main-forgottenPassword";
+@import "layout/navbar";
+@import "layout/main-rooms";
 // Components 
 @import "components/button";
 @import "components/header";
 @import "components/contenedor-padre";
+@import "components/box";

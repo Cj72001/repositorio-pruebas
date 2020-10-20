@@ -1,0 +1,21 @@
+{
+    "name": "repositorio-pruebas",
+    "version": "1.0.0",
+    "description": "* Rodrigo José Flores Chévez 00053714",
+    "main": "index.js",
+    "scripts": {
+        "watch": "node-sass -w -o css sass",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Cj72001/repositorio-pruebas.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Cj72001/repositorio-pruebas/issues"
+    },
+    "homepage": "https://github.com/Cj72001/repositorio-pruebas#readme"
+}

@@ -5,6 +5,28 @@ header {
     max-width: 100%;
     background: $color-secondary;
     box-shadow: 0px 10px rgba(0, 0, 0, 0.1);
+    /* Para posicionar el boton menu al inicio 
+    y el avatar al final: */
+    @include flex-row-spacebetween;
+}
+
+
+/* dandole propiedades de container para el avatar 
+y el nombre: */
+
+header {
+    .user {
+        @include flex-row-spacearound;
+        align-items: center;
+        width: 6%;
+        img {
+            height: 40px;
+            width: 40px;
+        }
+        p {
+            color: white;
+        }
+    }
 }
 
 #btn-menu {
@@ -32,6 +54,10 @@ header label:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 
+#btn-menu:checked~.menu {
+    margin-left: 0%;
+}
+
 .menu ul {
     margin: 0;
     list-style: none;
@@ -57,8 +83,4 @@ header label:hover {
     padding: 15px 20px;
     color: #fff;
     text-decoration: none;
-}
-
-#btn-menu:checked~.menu {
-    margin-left: 0%;
 }

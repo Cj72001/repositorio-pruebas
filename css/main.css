@@ -159,51 +159,15 @@ a {
 a:hover {
   cursor: pointer;
   color: #e8ffc1;
+  font-weight: bolder;
   transition: 1s; }
 
-/*--------------------------LOGIN----------------- 
----------------------------------------------------*/
-form input[type="submit"] {
-  padding: 10px;
-  max-width: 260px;
-  text-align: center;
-  background-color: #0278AE;
-  margin: 0 auto 20px;
-  border-radius: 10px;
-  border: 2px solid #000000;
-  transition: all 1s;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 20px;
-  display: block; }
-
-form input[type="submit"]:hover {
-  cursor: pointer;
-  background-color: #e8ffc1;
-  transition: all 0.3s;
-  color: #000; }
-
-.login-box {
-  width: 400px;
-  height: 500px;
-  border-radius: 15%;
-  background: #51ADCF;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  padding: 70px 30px;
-  box-shadow: 11px 10px rgba(0, 0, 0, 0.1); }
-
-.login-box .loginLogo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
-  left: calc(50% - 50px); }
+/* COLABORATION BOX PROPIEDADES: */
+.sidenav {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center; }
 
 .colaboration-box {
   display: flex;
@@ -218,12 +182,6 @@ form input[type="submit"]:hover {
   position: absolute;
   box-shadow: 11px 10px rgba(0, 0, 0, 0.1); }
 
-.sidenav {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center; }
-
 .colaboration-box img {
   width: 100px;
   height: 100px;
@@ -234,96 +192,49 @@ form input[type="submit"]:hover {
   height: 90%;
   padding: 10%; }
 
-.login-box h1 {
-  margin: 0;
-  padding: 0 0 20px;
-  text-align: center;
-  font-size: 22px; }
+/* propiedades de la clase .container (container -> clase padre) */
+.container-rooms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
-.login-box label {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  display: block; }
+/* propiedades de la clase general .nave para 'n' naves (hijos de .naves-div -> container) */
+.card-rooms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #51ADCF;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 5%;
+  border-radius: 30px;
+  border: 2px solid #0278AE; }
 
-.login-box input {
+/* propiedades de los div hijos (icono, nombre, caracteristicas):*/
+/* propiedades de las dimensiones del icono de naves */
+.card-rooms-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0278AE;
   width: 100%;
-  margin-bottom: 10px; }
+  height: 20%;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 10%; }
 
-.login-box input[type="text"],
-.login-box input[type="password"] {
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-  height: 60px;
-  color: #fff;
-  font-size: 16px; }
+.card-rooms-button a {
+  width: 100px; }
 
-/*--------------------------FORGOTTEN PASSWORD------- 
----------------------------------------------------*/
-.forgottenPassword-box {
-  width: 400px;
-  height: 500px;
-  border-radius: 15%;
-  background: #51ADCF;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  padding: 70px 30px;
-  box-shadow: 11px 10px rgba(0, 0, 0, 0.1); }
-
-.forgottenPassword-box .settingsLogo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
-  left: calc(50% - 50px); }
-
-.forgottenPassword-box h1 {
-  margin: 0;
-  padding: 0 0 20px;
-  text-align: center;
-  font-size: 22px; }
-
-.forgottenPassword-box label {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  display: block; }
-
-.forgottenPassword-box input {
-  width: 100%;
-  margin-bottom: 50px;
-  margin-top: 20px; }
-
-.forgottenPassword-box input[type="text"],
-.forgottenPassword-box input[type="email"] {
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-  height: 40px;
-  color: #fff;
-  font-size: 16px; }
-
-.forgottenPassword-box input[type="button"] {
-  border: none;
-  outline: none;
-  height: 40px;
-  background: #0690ec;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 20px; }
-
-.forgottenPassword-box input[type="button"]:hover {
-  cursor: pointer;
-  background: #184ad4;
-  color: #000; }
+@media screen and (min-width: 60%) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 /* estilo de todos los botones */
 input[type="submit"] {
@@ -364,12 +275,60 @@ input[type="submit"]:hover {
   .card-button:hover a {
     color: black; }
 
+.card-rooms-button {
+  padding: 10px;
+  max-width: 260px;
+  text-align: center;
+  background-color: #0278AE;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  transition: all 1s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px; }
+
+.enter {
+  background-color: white; }
+  .enter a {
+    color: black; }
+
+.enter:hover {
+  background-color: #dad5d5; }
+
+.end {
+  background-color: red; }
+  .end a {
+    color: white; }
+
+.end:hover {
+  background-color: #aa0909; }
+
 /*--------------------------HAMBURGUER MENU----------------- 
 ---------------------------------------------------*/
 header {
   max-width: 100%;
   background: #0278AE;
-  box-shadow: 0px 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0px 10px rgba(0, 0, 0, 0.1);
+  /* Para posicionar el boton menu al inicio 
+    y el avatar al final: */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/* dandole propiedades de container para el avatar 
+y el nombre: */
+header .user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 6%; }
+  header .user img {
+    height: 40px;
+    width: 40px; }
+  header .user p {
+    color: white; }
 
 #btn-menu {
   display: none; }
@@ -391,6 +350,9 @@ header label {
 header label:hover {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.3); }
+
+#btn-menu:checked ~ .menu {
+  margin-left: 0%; }
 
 .menu ul {
   margin: 0;
@@ -414,9 +376,6 @@ header label:hover {
   padding: 15px 20px;
   color: #fff;
   text-decoration: none; }
-
-#btn-menu:checked ~ .menu {
-  margin-left: 0%; }
 
 /* propiedades de la clase .container (container -> clase padre) */
 .container {
@@ -468,3 +427,75 @@ header label:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center; } }
+
+/*--------------------------FORGOTTEN PASSWORD Y LOGIN BOX------- 
+---------------------------------------------------*/
+.box-form input[type="submit"] {
+  padding: 10px;
+  max-width: 260px;
+  text-align: center;
+  background-color: #0278AE;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: all 1s;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: block; }
+
+.box-form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #e8ffc1;
+  transition: all 0.3s;
+  color: #000; }
+
+.box {
+  width: 400px;
+  height: 500px;
+  border-radius: 15%;
+  background: #51ADCF;
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1); }
+
+.box .logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px); }
+
+.box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px; }
+
+.box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block; }
+
+.box input {
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 20px; }
+
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="email"] {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px; }

@@ -2,6 +2,7 @@
 //colors
 $color-primary: #51ADCF;
 $color-secondary: #0278AE;
+$color-tertiary: #e8ffc1;
 //shadown
 $shadown-0: 0px 10px rgba(0, 0, 0, 0.1);
 $shadown-1: 5px 5px rgba(0, 0, 0, 0.1);
@@ -35,6 +36,7 @@ a {
 
 a:hover {
     cursor: pointer;
-    color: #e8ffc1;
+    color: $color-tertiary;
+    font-weight: bolder;
     transition: 1s;
 }
