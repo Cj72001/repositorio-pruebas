@@ -1,0 +1,12 @@
+//Mixin
+@import "base/mixin.scss";
+// Base Style 
+@import "base/reset";
+@import "base/page";
+//Layout
+@import "layout/main-login";
+@import "layout/main-forgottenPassword";
+// Components 
+@import "components/button";
+@import "components/header";
+@import "components/contenedor-padre";

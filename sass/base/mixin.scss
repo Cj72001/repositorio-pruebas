@@ -1,0 +1,20 @@
+//mixin ->  son  pequenas funciones que nos ahorran escribir una y otra vez las mismas propiedades
+//mixin con propiedades comunes para usar flexbox:
+@mixin flex-row-spacebetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin flex-row-spacearound {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@mixin flex-column-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

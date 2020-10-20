@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--link a estetica-->
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+
+
+    <div class="login-box">
+        <img src="/img/user_icon.png" class="loginLogo" alt="loginLogo" />
+        <h1>Login</h1>
+        <form action="#" method="GET">
+            <!-- ATRIBUTOS action="#" method="GET" PARA ENVIAR INFORMACION A "#" CON EL BOTON <input type="submit" value="SEND"> -->
+            <fieldset>
+                <legend>User Information</legend>
+                <label for="username">User Name</label>
+                <input maxlength="10" type="text" id="username" name="username" placeholder="Enter User Name" required />
+                <!-- ATRIBUTO name= nombre SON PARA MANDAR LOS DATOS CON ESE NOMBRE A action="#" -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required pattern=".{5,10}" title="Write your password account of more than 5 digits" />
+            </fieldset><br />
+
+            <!-- BOTON:  "ENTER" -->
+            <input type="submit" value="ENTER"><br>
+
+            <a href="ForgottenP.html">Password Forgotten</a>
+        </form>
+
+    </div>
+    <div class="sidenav">
+        <div class="colaboration-box">
+            <img src="/img/uca-logo.png" class="ucaLogo" alt="ucaLoco" />
+            <img src="/img/pmief-logo.png" class="pmifLogo" alt="pmifLogo" />
+        </div>
+    </div>
+</body>
+
+</html>

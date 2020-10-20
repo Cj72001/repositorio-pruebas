@@ -1,0 +1,470 @@
+/* html, 
+body, 
+div, 
+span, 
+applet, 
+object, 
+iframe, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+blockquote, 
+pre, 
+a, 
+abbr, 
+acronym, 
+address, 
+big, 
+cite, 
+code, 
+del, 
+dfn, 
+em, 
+img, 
+ins, 
+kbd, 
+q, 
+s, 
+samp, 
+small, 
+strike, 
+strong, 
+sub, 
+sup, 
+tt, 
+var, 
+b, 
+u, 
+i, 
+center, 
+dl, 
+dt, 
+dd, 
+ol, 
+ul, 
+li, 
+fieldset, 
+form, 
+label, 
+legend, 
+table, 
+caption, 
+tbody, 
+tfoot, 
+thead, 
+tr, 
+th, 
+td, 
+article, 
+aside, 
+canvas, 
+details, 
+embed, 
+figure, 
+figcaption, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+output, 
+ruby, 
+section, 
+summary, 
+time, 
+mark, 
+audio, 
+video { 
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  font-size: 100%; 
+  font: inherit; 
+  vertical-align: baseline; 
+} 
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section { 
+  display: block; 
+} 
+body { 
+  line-height: 1; 
+} 
+ol, 
+ul { 
+  list-style: none; 
+} 
+blockquote, 
+q { 
+  quotes: none; 
+  &:before, 
+  &:after { 
+    content: ""; 
+    content: none; 
+  } 
+} 
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+} 
+body { 
+  -webkit-text-size-adjust: none; 
+} 
+mark { 
+  background-color: transparent; 
+  color: inherit; 
+} 
+input::-moz-focus-inner { 
+  border: 0; 
+  padding: 0; 
+} 
+input, 
+select, 
+textarea { 
+  -moz-appearance: none; 
+  -webkit-appearance: none; 
+  -ms-appearance: none; 
+  appearance: none; 
+} */
+/* $font:'Play',
+sans-serif; */
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  background: white;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  text-align: center; }
+
+a:hover {
+  cursor: pointer;
+  color: #e8ffc1;
+  transition: 1s; }
+
+/*--------------------------LOGIN----------------- 
+---------------------------------------------------*/
+form input[type="submit"] {
+  padding: 10px;
+  max-width: 260px;
+  text-align: center;
+  background-color: #0278AE;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  transition: all 1s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: block; }
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #e8ffc1;
+  transition: all 0.3s;
+  color: #000; }
+
+.login-box {
+  width: 400px;
+  height: 500px;
+  border-radius: 15%;
+  background: #51ADCF;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  box-shadow: 11px 10px rgba(0, 0, 0, 0.1); }
+
+.login-box .loginLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px); }
+
+.colaboration-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15%;
+  background: #51ADCF;
+  color: #fff;
+  left: 0px;
+  padding: -10px 25px;
+  position: absolute;
+  box-shadow: 11px 10px rgba(0, 0, 0, 0.1); }
+
+.sidenav {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center; }
+
+.colaboration-box img {
+  width: 100px;
+  height: 100px;
+  left: calc(45% - 50px); }
+
+.colaboration-box .pmifLogo {
+  width: 40%;
+  height: 90%;
+  padding: 10%; }
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px; }
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block; }
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 10px; }
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 60px;
+  color: #fff;
+  font-size: 16px; }
+
+/*--------------------------FORGOTTEN PASSWORD------- 
+---------------------------------------------------*/
+.forgottenPassword-box {
+  width: 400px;
+  height: 500px;
+  border-radius: 15%;
+  background: #51ADCF;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  box-shadow: 11px 10px rgba(0, 0, 0, 0.1); }
+
+.forgottenPassword-box .settingsLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px); }
+
+.forgottenPassword-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px; }
+
+.forgottenPassword-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block; }
+
+.forgottenPassword-box input {
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 20px; }
+
+.forgottenPassword-box input[type="text"],
+.forgottenPassword-box input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px; }
+
+.forgottenPassword-box input[type="button"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #0690ec;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px; }
+
+.forgottenPassword-box input[type="button"]:hover {
+  cursor: pointer;
+  background: #184ad4;
+  color: #000; }
+
+/* estilo de todos los botones */
+input[type="submit"] {
+  padding: 10px;
+  /* max-width: 260px; */
+  text-align: center;
+  background-color: #0278AE;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  transition: all 1s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 100%; }
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: #e8ffc1;
+  color: black; }
+
+.card-button {
+  padding: 10px;
+  max-width: 260px;
+  text-align: center;
+  background-color: #0278AE;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  transition: all 1s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px; }
+
+.card-button:hover {
+  cursor: pointer;
+  background: #e8ffc1; }
+  .card-button:hover a {
+    color: black; }
+
+/*--------------------------HAMBURGUER MENU----------------- 
+---------------------------------------------------*/
+header {
+  max-width: 100%;
+  background: #0278AE;
+  box-shadow: 0px 10px rgba(0, 0, 0, 0.1); }
+
+#btn-menu {
+  display: none; }
+
+.menu {
+  position: absolute;
+  background: #0278AE;
+  width: 14%;
+  margin-left: -70%;
+  transition: all 1s; }
+
+header label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid #fff; }
+
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3); }
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; }
+
+.menu li {
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  flex-grow: 1; }
+
+.menu li:hover {
+  background: rgba(0, 0, 0, 0.3); }
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none; }
+
+#btn-menu:checked ~ .menu {
+  margin-left: 0%; }
+
+/* propiedades de la clase .container (container -> clase padre) */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+/* propiedades de la clase general .nave para 'n' naves (hijos de .naves-div -> container) */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #51ADCF;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  border-radius: 10px;
+  margin: 5%; }
+
+/* propiedades de los div hijos (icono, nombre, caracteristicas):*/
+/* propiedades de las dimensiones del icono de naves */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0278AE;
+  width: 100%;
+  border-radius: 10px;
+  border-bottom: 1px solid white; }
+
+.card-header img {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 200px;
+  width: 200px; }
+
+.card-name {
+  color: white;
+  margin: 10%; }
+
+.card-button a {
+  width: 260px; }
+
+@media screen and (min-width: 60%) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
