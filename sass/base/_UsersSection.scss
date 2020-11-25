@@ -1,0 +1,135 @@
+
+.button-back-content{
+    margin: 10px;
+}
+
+.UsersBackButton i{
+    margin-left: 10px;
+    color: white;
+    font-size: 35px;
+}
+
+.SearchUsersNav{
+    padding-top: 0px;
+    padding-right: 30px ;
+    border-top: 20px;
+    text-align: right;
+    justify-content: right;
+}
+
+.UsersTable{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0px !important;
+}
+
+.UsersSection{
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    background-color: #51ADCF ;
+    border-radius: 10px;
+    border: 2px solid #0278AE ;
+
+    @media (max-width : 900px){
+        min-width: 650px;
+        width: 95%;
+        margin: auto;
+        height: auto;
+        font-size: 10px;
+    }
+
+}
+
+.Users-section{
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    @media (max-width : 900px){
+        font-size: small;
+        height: fit-content;
+    }
+}
+
+.UsersTable{
+
+    @media (max-width : 900px){
+        font-size: small;
+        height: fit-content;
+    }
+}
+
+
+td img{
+    border-radius: 50px;
+}
+
+
+.UsersTable tbody tr td {
+    vertical-align: middle;
+
+}
+
+td {
+    align-items: center;
+
+}
+
+tr td i {
+    font-size: 35px;
+}
+
+.AddUser{
+    display: flex;
+    justify-content: center;
+}
+
+#addUserButton {
+    justify-content: center;
+    background-color: #0278AE;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 6px;
+    width: 150px;
+    color: white;
+}
+
+
+.DeleteUser {
+    color: white;
+}
+
+.DeleteUser:hover{
+    color: red;
+}
+
+
+.UsersThead th{
+    text-align: center;
+}
+
+.UsersBackButton{
+    float: left;
+}
+
+
+.UsersNavigationPage {
+    text-align: center;
+    margin-top: 0px !important;
+    font-size: 10px;
+}
+
+
+.UsersNavigationPage ul{
+    padding-top: 0px;
+    margin-top: 0px;
+    
+}
+
+.UsersNavigationPage ul li a{
+    padding: 2px 8px;
+}

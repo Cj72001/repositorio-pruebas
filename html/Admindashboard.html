@@ -1,149 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/44cde34504.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin dashboard</title>
-
-</head>
-
-<body>
-    <header>
-        <img src="/img/menu-icon.jpeg" width="20" alt="Hamb-menu">Menu
-        <div>
-            <h2><img src="img/user-icon.png" alt="user-logo" height="40"> Username</h2>
-        </div>
+    <title>Trafico de la web</title>
+  </head>
+  <body>
+    <header class="header-menu">
+      <div class="div-menu my-auto">
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu"
+          ><img src="/img/menu (2).png" alt="btn-menu"
+        /></label>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Rooms</a></li>
-                <li><a href="#">Create new Room</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
+          <ul>
+            <li><a href="container.html">Menu</a></li>
+            <li><a href="">Rooms</a></li>
+            <li><a href="">Create new Room</a></li>
+            <li><a href="">Exit</a></li>
+          </ul>
         </nav>
+      </div>
+      <div class="user">
+        <p>Chepe</p>
+        <img src="/img/avatares/Avatar01.jpg" alt="avatar" />
+      </div>
     </header>
 
-    <div class="button-back-content">
-        <div class="button-back">
-
-            <figure>
-                <img src="https://image.freepik.com/free-icon/arrow-left-thick_318-8506.jpg" width="30" height="30"
-                    alt="button back">
-            </figure>
-
+    <section id="usage-trafic" class="d-flex justify-content-between my-4">
+      <div
+        class="w-50 d-flex justify-content-center flex-column justify-content-around"
+      >
+        <h1 class="grafic-title text-center">Estadisticas de trafico de uso</h1>
+        <img
+          src="../img/avatares/Avatar01.jpg"
+          style="opacity: 0"
+          alt="señora de la toall"
+        />
+        <button
+          type="button"
+          class="btn btn-report justify-content-start ml-2 mt-4 w-25"
+          id="btn-d-report"
+        >
+          Descargar reporte
+        </button>
+      </div>
+      <div class="w-50 d-flex justify-content-around align-items-center">
+        <div class="visits mx-4 rounded">
+          <p
+            class="visits-header h-25 px-2 pt-2 text-center font-weight-bolder"
+          >
+            Total de visitas
+          </p>
+          <p class="visits-content h-75 text-center font-weight-bolder">100</p>
         </div>
-    </div>
-
-    <main class="statistics-admin">
-        <div>
-            <table cellpadding="15" style="background-color:blue">
-                <thead>
-                    <tr>
-                        <th>Total players</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td align="middle">560</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="unique-visitors mx-4 rounded">
+          <p
+            class="unique-visitors-header h-25 px-2 pt-2 text-center font-weight-bolder"
+          >
+            Visitas por dia
+          </p>
+          <p
+            class="unique-visitors-content h-75 text-center font-weight-bolder"
+          >
+            75
+          </p>
         </div>
-        <div>
-            <table cellpadding="15" style="background-color:orange">
-                <thead>
-                    <tr>
-                        <th colspan="2">Device used</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td align="middle">PC</td>
-                        <td>56%</td>
-                    </tr>
-                    <tr>
-                        <td align="middle">Laptop</td>
-                        <td>44%</td>
-                    </tr>
-
-                </tbody>
-            </table>
+      </div>
+    </section>
+    <section id="session-statistic" class="d-flex justify-content-between my-4">
+      <div
+        class="w-50 d-flex justify-content-center flex-column justify-content-around"
+      >
+        <h1 class="grafic-title text-center">Estadisticas de sesiones</h1>
+        <img
+          src="../img/avatares/Avatar01.jpg"
+          style="opacity: 0"
+          alt="señora de la toall"
+        />
+        <button
+          type="button"
+          class="btn btn-report justify-content-start ml-2 mt-4 w-25"
+          id="btn-d-report"
+        >
+          Descargar reporte
+        </button>
+      </div>
+      <div class="d-flex flex-column align-items-center w-50 mx-4">
+        <div
+          class="room-created m-4 rounded w-100 d-flex justify-content-around"
+        >
+          <p
+            class="room-created-header h-50 px-2 pt-2 text-center font-weight-bolder"
+          >
+            Salas creadas <br />
+            por día
+          </p>
+          <p
+            class="room-created-content h-50 text-center pt-2 font-weight-bolder"
+          >
+            70
+          </p>
         </div>
-
-        <div>
-            <table cellpadding="15" style="background-color:purple">
-                <thead>
-                    <tr>
-                        <th>Number of tables created</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td align="middle">60</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div
+          class="table-created m-4 rounded w-100 d-flex justify-content-around"
+        >
+          <p
+            class="table-created-header h-25 px-2 pt-2 text-center font-weight-bolder"
+          >
+            Mesas de juego creadas <br />
+            por dia
+          </p>
+          <p
+            class="table-created-content h-75 text-center pt-2 font-weight-bolder"
+          >
+            150
+          </p>
         </div>
+      </div>
+    </section>
+    <section
+      id="history"
+      class="container d-flex flex-column align-items-center justify-content-center my-4"
+    >
+      <article class="table-section mx-auto">
+        <table
+          class="table table-responsive-sm table-borderless text-center table-history"
+        >
+          <thead>
+            <tr style="width: 800px">
+              <th scope="col" style="width: 80px">Fecha</th>
+              <th scope="col" style="width: 150px">Jugadores</th>
+              <th scope="col" style="width: 80px">Salas</th>
+              <th scope="col" style="width: 80px">Mesas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="width: 800px">
+              <td style="width: 125px">10-05-2020</td>
+              <td style="width: 105px">150</td>
+              <td style="width: 85px">70</td>
+              <td style="width: 85px">38</td>
+            </tr>
+            <tr style="width: 800px">
+              <td style="width: 125px">10-05-2020</td>
+              <td style="width: 105px">150</td>
+              <td style="width: 85px">70</td>
+              <td style="width: 85px">38</td>
+            </tr>
+            <tr style="width: 800px">
+              <td style="width: 125px">10-05-2020</td>
+              <td style="width: 105px">150</td>
+              <td style="width: 85px">70</td>
+              <td style="width: 85px">38</td>
+            </tr>
+            <tr style="width: 800px">
+              <td style="width: 125px">10-05-2020</td>
+              <td style="width: 105px">150</td>
+              <td style="width: 85px">70</td>
+              <td style="width: 85px">38</td>
+            </tr>
+            <tr style="width: 800px">
+              <td style="width: 125px">10-05-2020</td>
+              <td style="width: 105px">150</td>
+              <td style="width: 85px">70</td>
+              <td style="width: 85px">38</td>
+            </tr>
+            <tr style="width: 800px">
+              <td style="width: 125px">10-05-2020</td>
+              <td style="width: 105px">150</td>
+              <td style="width: 85px">70</td>
+              <td style="width: 85px">38</td>
+            </tr>
+            <tr style="width: 800px">
+              <td style="width: 125px">10-05-2020</td>
+              <td style="width: 105px">150</td>
+              <td style="width: 85px">70</td>
+              <td style="width: 85px">38</td>
+            </tr>
+            <tr style="width: 800px">
+              <td style="width: 125px">10-05-2020</td>
+              <td style="width: 105px">150</td>
+              <td style="width: 85px">70</td>
+              <td style="width: 85px">38</td>
+            </tr>
+            <tr style="width: 800px">
+              <td style="width: 125px">10-05-2020</td>
+              <td style="width: 105px">150</td>
+              <td style="width: 85px">70</td>
+              <td style="width: 85px">38</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article class="btn-table-history d-flex justify-content-end">
+        <button type="button" id="btn-d-history" class="btn">
+          Descargar reporte
+        </button>
+      </article>
+    </section>
 
-        <div>
-            <table cellpadding="15" style="background-color:red">
-                <thead>
-                    <tr>
-                        <th>Daily reports</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td align="middle">10</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div>
-            <canvas id="AdminGraphs" width="200" height="100" style="border:1px solid #000000;"></canvas>
-            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
-        </div>
-
-        <div class="choose-room">
-            <select id="room-name" name="room">
-                <option value="">--choose a room--</option>
-                <option value="1">Room #1</option>
-                <option value="2">Room #2</option>
-            </select>
-        </div>
-
-        <div>
-            <table style="background-color: gray;" cellpadding="15">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Gamers</th>
-                        <th>Rooms</th>
-                        <th>GameTables</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td align="middle">July 5th, 2020</td>
-                        <td align="middle">80</td>
-                        <td align="middle">21</td>
-                        <td align="middle">80</td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </div>
-
-    </main>
-
-
-
-    <footer>
-        <img src="img/uca-logo.png" alt="Logo UCA" width="50">
-        <img src="img/pmief-logo.png" alt="Logo PMIEF" width="50">
-    </footer>
-</body>
-
+    <!-- SCRIPT NECESARIOS -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
 </html>

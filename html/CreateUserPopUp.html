@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://kit.fontawesome.com/415d250431.js" crossorigin="anonymous"></script>
+    <title>New user</title>
+</head>
+
+<body>
+    <section class="create-userPopUP">
+        <h1 class="CreateUserTitle">Create User</h1>
+        <form class="create-user-form-PopUp">
+            <div class="CreateUserOptions text-left p-5">
+                <div class="form-group ">
+                    <label for="title">Name</label><br>
+                    <input type="text" class="form-control" id="title" placeholder="Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Email</label><br>
+                    <input type="email" class="form-control" id="title" placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Password</label><br>
+                    <input type="password" class="form-control" id="title" placeholder="********">
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Confirm password</label><br>
+                    <input type="password" class="form-control" id="title" placeholder="********">
+                </div>
+
+                <fieldset class="form-group RoleAssignment">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0" style="font-weight: bold;">Role</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Tutor
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Administrator
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="CreateUserButtons">
+                    <div class="CreateUserBackButton">
+                        <button type="button" class="btn btn-primary CloseCreateUserButton" data-dismiss="create-room" aria-label="Close">
+                            Close
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="CreateUserDiv">
+                        <input class="btn btn-primary CreateUserButton" type="submit" value="Create user">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

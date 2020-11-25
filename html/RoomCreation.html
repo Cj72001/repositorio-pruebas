@@ -6,149 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+
     <title>Creacion de salas</title>
 </head>
 
 <body>
-    <header>
 
-        <img src="./img/logo.png" width="100" height="100" class="loginLogo" alt="loginLogo" />
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"> <i class="material-icons">view_headline</i> </label>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Rooms</a></li>
-                <li><a href="#">Create new Room</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </nav>
+    <header class="header-menu">
+        <div class="div-menu">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" style="width: 55px;
+            height: 50px"><img src="/img/menu (2).png" alt="btn-menu"></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="container.html">Menu</a></li>
+                    <li><a href="">Rooms</a></li>
+                    <li><a href="">Create new Room</a></li>
+                    <li><a href="">Exit</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="user">
+            <p>Chepe</p>
+            <img src="/img/avatares/Avatar01.jpg" alt="avatar">
+        </div>
     </header>
 
 
-    <div class="button-back-content">
-        <div class="button-back">
-
-            <figure>
-                <img src="https://image.freepik.com/free-icon/arrow-left-thick_318-8506.jpg" width="30" height="30"
-                    alt="button back">
-            </figure>
-
-        </div>
-    </div>
-
-    <!--
     <section class="create-room">
-        <h2>Room parameters</h2>
-        <h3>please fill the following form</h3>
-        <article>
-            <form class="room-parameters" action="#">
-
-                <div>
-                    <label for="tittle-room">Tittle:</label> <br><br>
-                    <input type="text" name="tittle-room" id="tittle-room" placeholder="Enter the room name"> <br><br>
-
-                    <label for="time-date">Time and date of expiration:</label> <br><br>
-                    <input type="time" name="time" id="time-date">
-                    <label for="date-time">Time and date of expiration:</label> <br><br>
-                    <input type="date" name="date" id="date-time"><br><br>
-
-                    <label for="expiration-date">Expiration date:</label> <br><br>
-                    <input type="datetime-local" name="expiration-date" id="expiration-date">
-
-                    <label for="available-time">Time available for the game:</label> <br><br>
+        <h1 class="CreateNewRoomTitle">Crear sala</h1>
+        <form class="create-room-form">
+            <div class="CreateRoomOptions text-left p-5">
+                <div class="form-group ">
+                    <label for="title">Titulo</label><br>
+                    <input type="text" class="form-control" id="title" placeholder="Name">
+                </div>
+    
+                <div class="form-group">
+                    <label for="time-date">Hora y fecha de vencimiento</label><br>
+                    <input type="date" name="date" id="date-time">
+                    <input type="time" name="time" id="time-date"><br><br>
+                </div>
+    
+                <div class="form-group">
+                    <label for="expiration-date">Fecha de creacion</label> <br>
+                    <input type="datetime-local" name="expiration-date" id="expiration-date"><br><br>
+                </div>
+    
+                <div class="form-group">
+                    <label for="available-time">Tiempo de juego</label> <br>
                     <input type="time" name="available-time" id="available-time"><br><br>
-
-                    <label for="n-players">Number of player:</label> <br><br>
+                </div>
+    
+                <div class="form-group">
+                    <label for="n-players">Numero de jugadores</label> <br><br>
                     <input type="number" name="players" id="n-players" placeholder="4"> <br><br>
                 </div>
-
                 <div>
-                    <label>Game scores </label> <br><br>
-
-                    <label for="triangles">Triangles</label> <br><br>
-                    <input type="number" name="triangles" id="triangles" placeholder=""> <br><br>
-
-                    <label for="squares">Squares</label> <br><br>
-                    <input type="number" name="squares" id="squares" placeholder=""> <br><br>
-
-                    <label for="rectangles">Rectangles</label> <br><br>
-                    <input type="number" name="rectangles" id="rectangles" placeholder=""> <br><br>
-
-                    <label>Bonus</label> <br><br>
-
-                    <label for="person">Person</label> <br><br>
-                    <input type="number" name="person" id="person" placeholder=""> <br><br>
-
-                    <label for="shield">Shield</label> <br><br>
-                    <input type="number" name="shield" id="shield" placeholder=""> <br><br>
-
-                    <label for="flag">Flag</label> <br><br>
-                    <input type="number" name="flag" id="flag" placeholder=""> <br><br>
-
-                    <input type="reset" value="DISCARD">
-                    <input type="submit" value="CREATE">
+                    <button type="button" class="btn btn-primary CloseRoomButton" data-dismiss="create-room"
+                        aria-label="Close" style="border : 2px solid black; border-radius: 8px;">
+                        <a href="rooms.html">Atras</a>
+                    </button>
                 </div>
-
-            </form>
-        </article>
-    </section>-->
-    <section class="create-room ">
-        </div>
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Title</label><br>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter name">
             </div>
     
-            <div class="form-group">
-                <label for="time-date">Time and date of expiration:</label><br>
-                <input type="date" name="date" id="date-time">
-                <input type="time" name="time" id="time-date"><br><br>
-            </div>
+            <div class="Scores text-left p-5">
+                <h3 class="RemainingPieces">Piezas restantes</h3><br>
     
-            <div class="form-group">
-                <label for="expiration-date">Expiration date:</label> <br>
-                <input type="datetime-local" name="expiration-date" id="expiration-date"><br><br>
-            </div>
-    
-            <div class="form-group">
-                <label for="available-time">Time available for the game:</label> <br>
-                <input type="time" name="available-time" id="available-time"><br><br>
-            </div>
-    
-            <div class="form-group">
-                <label for="n-players">Number of player:</label> <br><br>
-                <input type="number" name="players" id="n-players" placeholder="4"> <br><br>
-            </div>
-            </div>
-
-            <div>
-                <h3>Remaining pieces</h3><br>
-                
-                <div class="form-group">
-                    <label>Game scores </label> <br>
-                    <label for="triangles">Triangles</label> <br>
-                    <input type="number" name="triangles" id="triangles" placeholder=""> <br><br>
+                <div class="form-group ScoreRectangle">
+                    <label>Puntaje por rectángulo</label> <br>
+                    <input type="number" name="rectangle" id="ScoreRectangle" placeholder=""> <br><br>
                 </div>
+    
+                <div class="form-group ScoreTriangle">
+                    <label>Puntaje por triangulo</label> <br>
+                    <input type="number" name="triangles" id="ScoreTriangle" placeholder=""> <br><br>
+                </div>
+    
+                <h3 class="ScoreBonus">Bonus</h3><br>
     
                 <div class="form-group">
-                    <label for="n-players">Number of player:</label> <br><br>
-                    <input type="number" name="players" id="n-players" placeholder="4"> <br><br>
+    
+                    <div class="form-group ScoresFlag">
+                        <label>Colocar bandera correctamente</label> <br>
+                        <input type="number" name="ScoreFlag" id="ScoreFlag" placeholder=""> <br><br>
+                    </div>
+    
+                    <div class="form-group ScoresPeople">
+                        <label>Colocar personas</label> <br>
+                        <input type="number" name="ScorePlacePeople" id="ScorePlacePeople" placeholder=""> <br><br>
+                    </div>
                 </div>
+                <input class="btn btn-primary CreateRoomButton" type="submit" value="Crear sala">
             </div>
-
         </form>
     </section>
-    
-    <footer class="entitites-logos">
-        <figure class="logos">
-            <img src="https://th.bing.com/th/id/OIP.HZtI3dXD5E72_4koauGTiAHaKH?pid=Api&rs=1" width="50" height="60"
-                alt="uca logo">
-            <img src="https://pmief.org/-/media/images/main-images/pmief_main_image.png" width="55" height="45"
-                alt="PMIef logo">
-        </figure>
-    </footer>
+
 
 </body>
 

@@ -1,0 +1,108 @@
+#statistics-game {
+  .statistic-title {
+    width: 80%;
+    font-weight: 600;
+    font-size: 2.1em;
+  }
+
+  .statistic-score {
+    width: 20%;
+  }
+
+  .sumary-point {
+    width: 80%;
+    background-color: #51adcf;
+    color: #eeeeee;
+    font-weight: 500;
+    font-size: 1.93em;
+  }
+  .point {
+    background-color: #0278ae;
+    color: #eeeeee;
+    font-weight: 500;
+    font-size: 1.27em;
+  }
+  hr {
+    border: 0.5px solid black;
+    width: 98%;
+  }
+}
+
+#score {
+  .score-title {
+    font-size: 3em;
+  }
+
+  .score-point {
+    font-size: 5.78em;
+  }
+}
+
+#room-content {
+  .current-room {
+    font-size: 1.9em;
+  }
+}
+
+#usage-trafic {
+
+  .grafic-title {
+    font-size: 1.94em;
+  }
+  .visits,
+  .unique-visitors {
+    background-color: #ffffff;
+    height: 30%;
+    width: 30%;
+    border: 1px solid #888686;
+    box-shadow: -6px 6px 5px #a09e9e;
+  }
+
+  .visits {
+    &-header {
+      font-size: 1.35em;
+    }
+    &-content {
+      font-size: 2.65em;
+    }
+  }
+
+  .unique-visitors {
+    &-header {
+      font-size: 1.35em;
+    }
+    &-content {
+      font-size: 2.65em;
+    }
+  }
+}
+
+#session-statistic {
+  .grafic-title {
+    font-size: 1.94em;
+  }
+  .room-created,
+  .table-created {
+    background-color: #ffffff;
+    border: 1px solid #888686;
+    box-shadow: -6px 6px 5px #a09e9e;
+  }
+
+  .room-created {
+    &-header {
+      font-size: 1.47em;
+    }
+    &-content {
+      font-size: 2.85em;
+    }
+  }
+
+  .table-created {
+    &-header {
+      font-size: 1.47em;
+    }
+    &-content {
+      font-size: 2.85em;
+    }
+  }
+}

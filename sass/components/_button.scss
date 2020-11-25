@@ -1,82 +1,103 @@
 /* estilo de todos los botones */
 
 input[type="submit"] {
-    padding: 10px;
-    /* max-width: 260px; */
-    text-align: center;
-    background-color: #0278AE;
-    margin: 0 auto 20px;
-    border-radius: 10px;
-    border: 2px solid #000000;
-    transition: all 1s;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-    width: 100%;
+  padding: 10px;
+  /* max-width: 260px; */
+  text-align: center;
+  background-color: #0278ae;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  transition: all 1s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 100%;
 }
 
 input[type="submit"]:hover {
-    cursor: pointer;
-    background: #e8ffc1;
-    color: black;
+  cursor: pointer;
+  background: #e8ffc1;
+  color: black;
 }
 
 //botones de cada card (admin, tutor room)
 .card-button {
-    padding: 10px;
-    max-width: 260px;
-    text-align: center;
-    background-color: #0278AE;
-    margin: 0 auto 20px;
-    border-radius: 10px;
-    border: 2px solid #000000;
-    transition: all 1s;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
+  padding: 10px;
+  max-width: 260px;
+  text-align: center;
+  background-color: #0278ae;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  transition: all 1s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .card-button:hover {
-    cursor: pointer;
-    background: #e8ffc1;
-    a {
-        color: black;
-    }
+  cursor: pointer;
+  background: #e8ffc1;
+  a {
+    color: black;
+  }
 }
 
 //botones de cada card (admin, tutor room)
 .card-rooms-button {
-    padding: 10px;
-    max-width: 260px;
-    text-align: center;
-    background-color: #0278AE;
-    margin: 0 auto 20px;
-    border-radius: 10px;
-    border: 2px solid #000000;
-    transition: all 1s;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
+  padding: 10px;
+  max-width: 260px;
+  text-align: center;
+  background-color: #0278ae;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  transition: all 1s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .enter {
-    background-color: white;
-    a {
-        color: black
-    }
+  background-color: white;
+  a {
+    color: black;
+  }
 }
 
 .enter:hover {
-    background-color: rgb(218, 213, 213);
+  background-color: rgb(218, 213, 213);
 }
 
 .end {
-    background-color: red;
-    a {
-        color: white
-    }
+  background-color: red;
+  a {
+    color: white;
+  }
 }
 
 .end:hover {
-    background-color: rgb(170, 9, 9);
+  background-color: rgb(170, 9, 9);
+}
+
+/* BOTONES DE BOOTSTRAP */
+.btn {
+  background-color: #0278ae;
+  color: #eeeeee;
+
+  &-room-end {
+    background-color: #fd4040;
+    border: 0.7px solid #0278ae;
+  }
+
+  &-hover-group {
+    background-color: #e0e0e0;
+    color: #191919;
+  }
+
+  &-link {
+    background-color: transparent;
+    font-size: 1.35em;
+  }
 }

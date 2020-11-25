@@ -1,12 +1,12 @@
  /* propiedades de la clase .container (container -> clase padre) */
  
- .container {
+ .container-padre {
      @include flex-row-spacearound;
      flex-wrap: wrap;
  }
  /* propiedades de la clase general .nave para 'n' naves (hijos de .naves-div -> container) */
  
- .card {
+ .card-menu {
      @include flex-column-center-center;
      background-color: $color-primary;
      box-shadow: $shadown-2;
@@ -42,7 +42,7 @@
  }
  
  @media screen and (min-width: 60%) {
-     .container {
+     .container-padre {
          @include flex-column-center-center
      }
  }

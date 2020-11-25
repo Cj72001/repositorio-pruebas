@@ -1,75 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+        integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/415d250431.js" crossorigin="anonymous"></script>
     <title>Users</title>
 </head>
-<body >
-    <header>
-        <img src="/img/menu-icon.jpeg" width="20" alt="Hamb-menu" >Menu
-    <div>
-        <h2><img src="img/user-icon.png" alt="user-logo" height="40"> Username</h2>
-    </div>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Rooms</a></li>
-            <li><a href="#">Create new Room</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </nav>
-    </header>
-    
-    <div class="button-back-content">
-        <div class="button-back">
-    
-            <figure>
-                <img src="https://image.freepik.com/free-icon/arrow-left-thick_318-8506.jpg" width="30" height="30"
-                    alt="button back">
-            </figure>
-    
+
+<body>
+
+
+    <header class="header-menu">
+        <div class="div-menu">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" style="width: 55px;
+            height: 50px"><img src="/img/menu (2).png" alt="btn-menu"></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="container.html">Menu</a></li>
+                    <li><a href="">Rooms</a></li>
+                    <li><a href="">Create new Room</a></li>
+                    <li><a href="">Exit</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+        <div class="user">
+            <p>Chepe</p>
+            <img src="/img/avatares/Avatar01.jpg" alt="avatar">
+        </div>
+    </header>
 
-    <div>
-        <table cellpadding="15">
-    <thead>
-        <tr>
-            <th>Avatar</th>
-            <th>Username</th>
-            <th>Password</th>
-            <th>Active</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><img src="img/user-icon.png" alt="user-icon.png" height="50"></td>
-            <td>Chepito</td>
-            <td>*******</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <td><img src="img/user-icon.png" alt="user-icon.png" height="50"></td>
-            <td>Maria</td>
-            <td>*******</td>
-            <td>No</td>
-        </tr>
-        <tr>
-            <td><img src="img/user-icon.png" alt="user-icon.png" height="50"></td>
-            <td>xxGamerproxx</td>
-            <td>*******</td>
-            <td>yes</td>
-        </tr>
-    </tbody>
-  
-    </table>
-        <a href="#"><input type="button" value="Edit"></a>
-        <a href="#"><input type="button" value="Add" ></a>
 
-    </div>
-        
-        
-    
+
+    <section class="UsersSection">
+
+        <div class="button-back-content">
+            <div class="button-back">
+                <a href="administratorMenu.html" class="UsersBackButton">
+                    <i class="fas fa-long-arrow-alt-left"></i>
+                </a>
+            </div>
+        </div>
+
+        <nav class="SearchUsersNav">
+            <form name="searchUsers">
+                <input name="SearchUsersInput" type="searchUsers" id="search-input" placeholder="Search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </nav>
+
+        <div class="Users-section">
+            <table class="table UsersTable" cellpadding="15">
+                <thead>
+                    <tr class="UsersThead">
+                        <th>Editar</th>
+                        <th scope="col">Avatar</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Contraseña</th>
+                        <th scope="col">Estado</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                    <tr>
+                        <td><button type="button" id="EditUser-1" class="btn btn-primary"
+                                style="background-color: transparent; border: 0px;">
+                                <i class="far fa-edit"></i>
+                            </button>
+                        </td>
+                        <td><img src="/img/Avatar-hombre.png" alt="user-icon.png" height="75"></td>
+                        <td>Chepito</td>
+                        <td>*******</td>
+                        <td>Activo</td>
+                        <td>
+                            <a href="#" class="DeleteUserButton">
+                                <i class="fas fa-user-minus DeleteUser"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" id="EditUser-2" class="btn btn-primary"
+                                style="background-color: transparent; border: 0px;">
+                                <i class="far fa-edit"></i>
+                            </button>
+                        </td>
+                        <td><img src="/img/Avatar-hombre.png" alt="user-icon.png" height="75"></td>
+                        <td>TuMakina</td>
+                        <td>*******</td>
+                        <td>Inactivo</td>
+                        <td>
+                            <a href="#" class="DeleteUserButton">
+                                <i class="fas fa-user-minus DeleteUser"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" id="EditUser-3" class="btn btn-primary"
+                                style="background-color: transparent; border: 0px;">
+                                <i class="far fa-edit"></i>
+                            </button>
+                        </td>
+                        <td><img src="/img/Avatar-hombre.png" alt="user-icon.png" height="75"></td>
+                        <td>xxGamerproxx</td>
+                        <td>*******</td>
+                        <td>Activo</td>
+                        <td>
+                            <a href="#" class="DeleteUserButton">
+                                <i class="fas fa-user-minus DeleteUser"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <nav aria-label="Page navigation example" class="UsersNavigationPage">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+              
+
+            <div class="AddUser">
+                <button type="button" id="addUserButton" class="btn btn-primary">Agregar usuario</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Editar usuario-->
+
+
+
+    <form class="form-inline">
+        <!--modal -->
+        <!-- Modal -->
+        <div id="ChangePasswordPopUp" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <!-- Modal content-->
+                <div class="modal-content" style="background-color: #eeeeee;">
+
+                    <section class="ChangePassword-userPopUP">
+
+                        <button type="button" class="btn btn-primary ChangePasswordBackButton" 
+                        data-dismiss="modal" aria-label="Close"
+                        style="background-color: transparent ; border: 0px; font-size: 30px;">
+                            <i class="fas fa-long-arrow-alt-left"></i>
+                        </button>
+
+                        <h1 class="ChangePassword">Cambiar contraseña</h1>
+
+                        <form class="ChangePassword-user-form-PopUp">
+
+                            <div class="ChangePassword text-left p-5">
+                                <div class="form-group UserProperties" style="display: block;">
+                                    <img src="/img/Avatar-hombre.png" alt="user-icon.png" height="75">
+                                    <h3 style="text-align: center;">Nombre de usuario</h3>
+                                </div>
+
+                                <div class="form-group ChangePasswordInput" style="display: block;"><br>
+                                    <label for="password">Contraseña</label>
+                                    <input name="ChangePassword" type="password" class="form-control" id="UserChangePassword"
+                                        placeholder="********"><br>
+                                </div>
+
+                                <div class="form-group ConfirmChangePasswordInput" style="display: block;"><br>
+                                    <label for="ConfirmPassword">Confirmar contraseña</label>
+                                    <input name="ConfirmPassword" type="password" class="form-control" id="UserConfirmChangePassword"
+                                        placeholder="********"><br>
+                                </div>
+
+
+                                <div class="ChangePasswordButton"><br>
+                                    <input name="ConfirmChangePassword" class="btn btn-primary UserChangePasswordChange" type="submit"
+                                         value="Cambiar contraseña">
+                                </div>
+
+                            </div>
+                        </form>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+        <!--modal -->
+        <script>
+
+            $("#EditUser-1").on('click', () => ($("#ChangePasswordPopUp").modal("show")));
+            $("#EditUser-2").on('click', () => ($("#ChangePasswordPopUp").modal("show")));
+            $("#EditUser-3").on('click', () => ($("#ChangePasswordPopUp").modal("show")));
+
+        </script>
+    </form>
+
+
+
+    <!-- Agregar usuario  modal -->
+    <form class="form-inline">
+        <!--modal -->
+        <!-- Modal -->
+        <div id="CreateNewUserPopUp" class="modal fade" role="dialog">
+
+            <div class="modal-dialog modal-dialog-centered">
+
+                <!-- Modal content-->
+                <div class="modal-content" style="background-color: #eeeeee;">
+
+                    <h1 class="CreateUserTitle">Crear usuario</h1>
+                    <section class="create-userPopUP">
+
+
+                        <form class="create-user-form-PopUp">
+                            <div class="CreateUserOptions text-left p-5">
+
+                                <div class="form-group ">
+                                    <label for="title">Nombre</label>
+                                    <input name="AddUserName" type="text" class="form-control" id="AddUser-name" placeholder="Name"><br>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="title">Email</label>
+                                    <input name="AddUserEmail" type="email" class="form-control" id="AddUser-email"
+                                        placeholder="example@gmail.com"><br>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="title">Contraseña</label>
+                                    <input name="AddUserPassword" type="password" class="form-control" id="AddUser-password"
+                                        placeholder="********"><br>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="title">Confirmar contraseña</label>
+                                    <input name="AddUserConfirmPassword" type="password" class="form-control" id="AddUser-confirm-password"
+                                        placeholder="********"><br>
+                                </div>
+                                <h5 style="margin-bottom: 0px; text-align: center;">Rol</h5>
+
+                                <div class="SectionRoleaAssigment">
+                                    <fieldset class="form-group RoleAssignment">
+                                        <div class="row">
+                                            <div class="col-sm-10" style="margin-left: auto;">
+                                                <div class="form-check" style="padding: 0px;">
+                                                    <input  class="form-check-input" type="radio" name="gridRadios"
+                                                        id="gridRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="gridRadios1">
+                                                        Tutor
+                                                    </label>
+                                                </div>
+                                                <div class="form-check" style="padding: 0px;">
+                                                    <input class="form-check-input" type="radio" name="gridRadios"
+                                                        id="gridRadios2" value="option2">
+                                                    <label class="form-check-label" for="gridRadios2">
+                                                        Administrator
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <div class="CreateUserButtons">
+                                    <div class="CreateUserBackButton">
+
+                                        <button type="button" class="btn btn-primary CloseCreateUserButton"
+                                            data-dismiss="modal" aria-label="Close">
+                                            Cerrar
+                                            <span aria-hidden="true">&times;</span>
+
+                                        </button>
+                                    </div>
+
+                                    <div class="CreateUserDiv">
+                                        <input name="CreateNewUser" class="btn btn-primary CreateUserButton" type="submit"
+                                            value="Crear usuario">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!--modal -->
+
+        <script>
+            $("#addUserButton").on('click', () => $("#CreateNewUserPopUp").modal("show"))
+        </script>
+    </form>
 </body>
+
 </html>
