@@ -1,0 +1,34 @@
+/* COLABORATION BOX PROPIEDADES: */
+
+.sidenav {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.colaboration-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    background: $color-primary;
+    color: white;
+    left: 0px;
+    padding: -10px 25px;
+    position: absolute;
+    box-shadow: 11px 10px rgba(0, 0, 0, 0.1);
+}
+
+.colaboration-box img {
+    width: 100px;
+    height: 100px;
+    left: calc(45% - 50px);
+}
+
+.colaboration-box .pmifLogo {
+    width: 40%;
+    height: 90%;
+    padding: 10%;
+}

@@ -1,0 +1,43 @@
+.table-section {
+  width: 40%;
+}
+
+.table-history {
+  tbody {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+    background-color: #0278ae;
+    color: #eeeeee;
+
+    tr:hover {
+      background-color: #51adcf;
+      color: #eeeeee;
+      font-weight: 700;
+    }
+  }
+  thead,
+  tbody,
+  td,
+  th {
+    display: block;
+  }
+  thead {
+    background-color: #eeeeee;
+    border: 1px solid #191919;
+
+    & > tr > th {
+      float: left;
+      border-bottom-width: 0;
+    }
+  }
+
+  tbody td {
+    float: left;
+    border-bottom-width: 0;
+  }
+}
+
+.btn-table-history {
+  width: 40%;
+}

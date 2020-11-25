@@ -1,0 +1,128 @@
+.create-userPopUP{
+    background-color: #eeeeee;
+}
+
+.create-userPopUP{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.CreateUserTitle{
+    text-align: center;
+}
+
+.CreateUserOptions div label{
+    font-weight: bold;
+    color: black;
+}
+
+.CreateUserOptions div input{
+    background-color: #51ADCF;
+    color: white;
+}
+
+.CreateUserButtons{
+    display: flex;
+
+}
+
+.AddUser button{
+    margin-bottom: 20px;
+    background-color: #0278AE ;
+    justify-content: right;
+}
+
+
+.CreateUserBackButton .CloseCreateUserButton{
+    margin-right: 20px;
+    background-color: #0278AE ;
+}
+
+.CreateUserBackButton{
+    margin-right: auto;
+    margin-left: 3px;
+
+}
+
+.CreateUserDiv{
+    margin-right: 3px;
+    margin-left: auto;
+
+}
+
+.modal-dialog-centered{
+    justify-content: center;
+}
+
+.modal-dialog-centered .modal-content{
+    justify-content: center;
+   // width: 1000px;
+}
+
+.create-userPopUP{
+    //width: 1000px;
+    margin: auto;
+}
+
+.CreateUserOptions{
+    width: 100%;
+}
+
+.CreateUserOptions div{
+    width: 100%;
+}
+
+.CreateUserOptions fieldset{
+    width: 100%;
+}
+
+.CreateUserOptions .form-group input{
+    width: 100%;
+} 
+
+.CreateUserOptions .form-group label{
+    padding: 10px;
+}
+
+.RoleAssignment .row div{
+    padding: 5px;
+}
+
+#AddUser-name::placeholder{
+    color: white;
+}
+
+#AddUser-email::placeholder{
+    color: white;
+}
+
+#AddUser-password::placeholder{
+    color: white;
+}
+
+#AddUser-confirm-password::placeholder{
+    color: white;
+}
+
+.RoleAssignment{
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    padding-block-end: 0px;
+    min-inline-size: min-content;
+
+}
+
+
+#gridRadios1{
+    width: auto;
+}
+
+#gridRadios2{
+    width: auto;
+}
+

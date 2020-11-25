@@ -1,0 +1,18 @@
+.group-content {
+  background-color: #51adcf;
+  color: #eeeeee;
+  border: 0.6px solid #0278ae;
+  margin: 0 8px;
+  box-shadow: -6px 6px 5px #a09e9e;
+
+  &-add {
+    background-color: #0278ae;
+    color: #eeeeee;
+    border: 0.6px solid #0278ae;
+    margin: 0 8px;
+    box-shadow: -6px 6px 5px #a09e9e;
+  }
+  .group-body {
+    visibility: hidden;
+  }
+}

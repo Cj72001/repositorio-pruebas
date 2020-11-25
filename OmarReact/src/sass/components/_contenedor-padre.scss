@@ -1,0 +1,48 @@
+ /* propiedades de la clase .container (container -> clase padre) */
+ 
+ .container-padre {
+     @include flex-row-spacearound;
+     flex-wrap: wrap;
+ }
+ /* propiedades de la clase general .nave para 'n' naves (hijos de .naves-div -> container) */
+ 
+ .card-menu {
+     @include flex-column-center-center;
+     background-color: $color-primary;
+     box-shadow: $shadown-2;
+     width: 350px;
+     border-radius: 10px;
+     margin: 5%;
+ }
+ /* propiedades de los div hijos (icono, nombre, caracteristicas):*/
+ /* propiedades de las dimensiones del icono de naves */
+ 
+ .card-header {
+     @include flex-column-center-center;
+     background-color: $color-secondary;
+     width: 100%;
+     border-radius: 10px;
+     border-bottom: 1px solid white;
+ }
+ 
+ .card-header img {
+     padding-top: 25px;
+     padding-bottom: 25px;
+     height: 200px;
+     width: 200px;
+ }
+ 
+ .card-name {
+     color: white;
+     margin: 10%;
+ }
+ 
+ .card-button a {
+     width: 260px;
+ }
+ 
+ @media screen and (min-width: 60%) {
+     .container-padre {
+         @include flex-column-center-center
+     }
+ }

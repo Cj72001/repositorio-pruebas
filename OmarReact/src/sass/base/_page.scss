@@ -1,0 +1,42 @@
+//_page.scss -> es donde contendra las propiedades bases de la bagina como, background-color, font-family, etc
+//colors
+$color-primary: #51ADCF;
+$color-secondary: #0278AE;
+$color-tertiary: #e8ffc1;
+//shadown
+$shadown-0: 0px 10px rgba(0, 0, 0, 0.1);
+$shadown-1: 5px 5px rgba(0, 0, 0, 0.1);
+$shadown-2: 10px 10px rgba(0, 0, 0, 0.1);
+// font
+
+/* $font:'Play',
+sans-serif; */
+
+//body:
+//@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+body {
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+    //    font-family: $font;
+    //    font-weight: bold;
+    background: white;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+a:hover {
+    cursor: pointer;
+    color: $color-tertiary;
+    font-weight: bolder;
+    transition: 1s;
+}
